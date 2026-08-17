@@ -17,6 +17,10 @@ int main() {
         return 1;
     }
     else if(pid == 0) {
-        
+        wait(NULL);
+        cout << "Child process" << endl;
+    }
+    else {
+        cout << "Parent process" << endl;
     }
 }
